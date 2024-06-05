@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weight Lifting App</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="old-max-weight">Old Max Weight</label>
+            <input type="number" class="form-control" id="old-max-weight" placeholder="lbs">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-max-weight">New Max Weight</label>
+            <input type="number" class="form-control" id="new-max-weight" placeholder="lbs">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="lift-type">Lift Type</label>
+            <input type="text" class="form-control" id="lift-type" placeholder="lift">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date">
+          </div>
+        </div>
+      </div>
+      <button id="add" class="btn btn-primary form-control">Add</button>
+    </div>
+  </div>
+  <table id="list" class="table table-light table-striped">
+    <tr>
+      <th>Date</th>
+      <th>Lift</th>
+      <th>Old Max Weight</th>
+      <th>New Max Weight</th>
+      <th>Delete</th>
+    </tr>
+  </table>
+
+  
+  
+
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+      
