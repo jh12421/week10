@@ -4,44 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weight Lifting App</title>
+  <!--link to bootstrap css-->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body class="container">
   <br>
   <div class="card">
     <div class="card-body">
+      <!--first row of input-->
       <div class="row">
         <div class="col-sm">
           <div class="form-group">
             <label for="old-max-weight">Old Max Weight</label>
+            <!--input type for old max weight-->
             <input type="number" class="form-control" id="old-max-weight" placeholder="lbs">
           </div>
         </div>
         <div class="col-sm">
           <div class="form-group">
             <label for="new-max-weight">New Max Weight</label>
+            <!--input for new max weight-->
             <input type="number" class="form-control" id="new-max-weight" placeholder="lbs">
           </div>
         </div>
       </div>
+      <!--second row-->
       <div class="row">
         <div class="col-sm">
           <div class="form-group">
             <label for="lift-type">Lift Type</label>
+            <!--input of lift type-->
             <input type="text" class="form-control" id="lift-type" placeholder="lift">
           </div>
         </div>
         <div class="col-sm">
           <div class="form-group">
             <label for="date">Date</label>
+            <!--input date-->
             <input type="date" class="form-control" id="date">
           </div>
         </div>
       </div>
+      <!--add button-->
       <button id="add" class="btn btn-primary form-control">Add</button>
     </div>
   </div>
+  <!--this table will list added entries-->
   <table id="list" class="table table-light table-striped">
+    <!--table-->
     <tr>
       <th>Date</th>
       <th>Lift</th>
@@ -53,7 +63,7 @@
 
   
   
-
+  <!--link to jquery and bootstrap js and custom js file-->
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="index.js"></script>
